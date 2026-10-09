@@ -4,22 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SyntaxWear - Ecommerce</title>
+    <title>SyntaxWear - Tênis e Sneakers Online</title>
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/variables.css">
     <link rel="stylesheet" href="./src/css/base.css">
     <link rel="stylesheet" href="./src/css/layout.css">
+
+    <link rel="stylesheet" href="./src/css/components/header.css">
     
 </head>
 
 <body>
-    <header class="site-header">
-        <a class="site-logo" href="#inicio" aria-label="SyntaxWear — início">SyntaxWear</a>
+    <header class="header">
+        <!-- Logo e navegação -->
+        <h1 class="logo">
+            <a href="/" title="SyntaxWear - Tênis e Sneakers Online">
+                <img src="./src/images/logo/logo.svg" alt="SyntaxWear - Tênis e Sneakers Online"/>
+            </a>
+        </h1>
+        
 
-        <nav class="primary-navigation" aria-label="Navegação principal">
+        <nav class="nav-center" aria-label="Categorias Principais">
             <ul role="list">
-                <li><a href="#categorias">Categorias</a></li>
-                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="#">Masculino</a></li>
+                <li><a href="#">Feminino</a></li>
+                <li><a href="#">Outlet</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-right" aria-label="Acesso rápido">
+            <ul>
+                <li><a href="#">Nossas lojas</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li>
+                    <a href="#" aria-label="Minha conta">
+                        <img src="./src/images/icons/user.svg" alt="Minha conta"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Ajuda">
+                        <img src="./src/images/icons/help.svg" alt="Ajuda"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Carrinho">
+                        <img src="./src/images/icons/bag.svg" alt="Carrinho"/>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
