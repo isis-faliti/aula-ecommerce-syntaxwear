@@ -1,1 +1,73 @@
 /* hero.css */
+
+.hero-section {
+    background: url(../../images/banners/hero.jpg) no-repeat center;
+    background-size: cover;
+    
+    height: 500px;
+    position: relative;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 7rem;
+}
+
+.hero-content {
+    color: #ededed;
+    max-width: 428px;
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hero-content .hero-title {
+    font-size: 1.7rem;
+    /* margin-bottom: 40px; */
+    margin: 5px 0 40px 0;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 2px;
+}
+
+.hero-content .hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.btn {
+    font-size: 1.25rem;
+    width: 161px;
+    height: 48px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    line-height: 26px;
+}
+
+.btn-filled {
+    background-color: #ffffff;
+    color: #6329A2;
+
+}
+
+.btn:hover {
+    background-color: #6329A2;
+    color: #ffffff;
+    border-color: #6329A2;
+}
