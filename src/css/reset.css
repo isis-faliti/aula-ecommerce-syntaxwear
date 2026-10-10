@@ -1,8 +1,6 @@
 /* Minimal reset inspired by modern CSS reset practices. */
 
-*,
-*::before,
-*::after {
+*{
     box-sizing: border-box;
 }
 

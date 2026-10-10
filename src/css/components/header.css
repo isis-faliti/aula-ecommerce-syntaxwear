@@ -17,19 +17,18 @@
 
 .header {
     position: fixed;
-    top: 20px;
+    top: 3.62rem;
     left: 50%;
     transform: translateX(-50%);
 
-    width: min(1260px, calc(100% - 2rem));
-    box-sizing: border-box;
-
-    border-radius: 15px;
+    width: min(1360px, calc(100% - 2rem));
+    
+    border-radius: 20px;
     z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .255rem 1.25rem;
+    padding: .255rem 2.1rem .255rem 1.25rem;
     background-color: #ffffff;
 }
 
@@ -37,9 +36,13 @@
     height: 48px;
 }
 
-.nav-center ul {
+.nav-center ul, .nav-right ul {
     display: flex;
     gap: 2.5rem;
+}
+
+.nav-right ul {
+    align-items: center;
 }
 
 .nav-center a,
@@ -51,12 +54,6 @@
 .nav-center a:hover,
 .nav-right a:hover {
     color: #7c3aed;
-}
-
-.nav-right ul {
-    display: flex;
-    gap: 2.5rem;
-    align-items: center;
 }
 
 .nav-right img {
