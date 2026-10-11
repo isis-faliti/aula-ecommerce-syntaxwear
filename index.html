@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./src/css/components/hero.css">
     <link rel="stylesheet" href="./src/css/components/product-category.css">
     <link rel="stylesheet" href="./src/css/components/product-grid.css">
+    <link rel="stylesheet" href="./src/css/components/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
@@ -121,17 +123,104 @@
         </section>
     </main>
 
-    <footer class="site-footer">
-        <address class="contact-information" aria-label="Informações de contato"></address>
 
-        <nav class="footer-navigation" aria-label="Links do rodapé">
-            <ul role="list">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#categorias">Categorias</a></li>
-                <li><a href="#destaques">Destaques</a></li>
-            </ul>
-        </nav>
+    <footer class="site-footer">
+        <div class="footer-content">
+
+            <!-- Newsletter e redes sociais -->
+            <section class="footer-newsletter">
+                <div class="newsletter">
+                    <label for="email">Inscreva-se em nosso e-mail</label>
+                    <form action="#" method="post">
+                        <input type="email" id="email" name="email" placeholder="email@email.com" required>
+                    </form>
+                </div>
+
+                <div class="social-media">
+                    <p>Redes sociais</p>
+
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="TikTok">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Navegação do footer -->
+            <nav id="footer" class="footer-nav" aria-label="Navegação do rodapé">
+
+                <div class="footer-column">
+                    <h2>Masculino</h2>
+                    <ul>
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Esporte</a></li>
+                        <li><a href="#">Moderno</a></li>
+                        <li><a href="#">Futurista</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h2>Feminino</h2>
+                    <ul>
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Esporte</a></li>
+                        <li><a href="#">Moderno</a></li>
+                        <li><a href="#">Futurista</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h2>Outlet</h2>
+                    <ul>
+                        <li><a href="#">Masculino</a></li>
+                        <li><a href="#">Feminino</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h2>Nossas lojas</h2>
+                    <ul>
+                        <li><a href="#">Loja física</a></li>
+                        <li><a href="#">Loja online</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h2>Sobre</h2>
+                    <ul>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Missão</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+        <!-- Direitos autorais -->
+        <div class="footer-bottom">
+            <p>Copyright. All Rights Reserved</p>
+        </div>
     </footer>
+
+
 </body>
 
 </html>
