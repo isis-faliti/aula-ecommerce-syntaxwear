@@ -53,3 +53,32 @@
     background-size: cover;
 }
 
+/* @media (max-width: 500px) {
+    .category-card {
+        width: 100%;
+    }
+} */
+
+@media (max-width: 720px) {
+    .categories-section {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 2.5rem 1rem;
+        scroll-snap-type: x mandatory;
+
+        /* Oculta a  barra de rolagem */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .categories-section::-webkit-scrollbar {
+        display: none;
+    }
+
+    .category-card {
+        flex: 0 0 327px;
+        scroll-snap-align: start;
+    }
+}

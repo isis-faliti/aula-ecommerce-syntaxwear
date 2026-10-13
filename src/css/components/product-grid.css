@@ -40,7 +40,6 @@
         "sneaker-white sneaker-white model sneaker-silver"
     ;
     gap: 30px;
-    margin-top: 40px;
 }
 
 .card {
@@ -74,4 +73,34 @@
 .cta-group {
     display: flex;
     gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .grid-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+            "highlight highlight"
+            "sneaker-white sneaker-white"
+            "model sneaker-color"
+            "model sneaker-silver"
+            "sneaker-purple sneaker-purple"
+        ;
+        max-width: 100%;
+        gap: 0.625;
+    }
+
+    .highlight {
+        min-height: 500px;
+    }
+
+    .sneaker-white,
+    .sneaker-purple {
+        min-height: 190px;
+    }
+
+    .model {
+        min-height: 371px;
+    }
+
 }

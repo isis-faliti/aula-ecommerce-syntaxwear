@@ -1,32 +1,5 @@
 /* header.css */
 
-/* .header {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 1260px;
-    border-radius: 15px;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .255rem 1.25rem;
-    background-color: #ffffff;
-} */
-
-/* 
-    commit fix: corrige o tamanho do menu em telas de 100% e o estilo do menu da direita
-
-    .nav-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    flex: 1;
-    margin-left: 10rem;
-} */
-
 .header {
     position: fixed;
     top: 3.62rem;
@@ -91,7 +64,7 @@
 .menu-icon {
     width: 30px;
     height: 30px;
-    display: block;
+    display: none;
 }
 
 .menu-icon img {
@@ -104,16 +77,10 @@
     opacity: 0.7;
 }
 
-/* @media (max-width: 768px) {
-    .menu-label {
-        display: block;
-    }
-} */
-
-
-@media (max-width: 1420px) {
+@media (max-width: 1220px) {
     .header {
         width: calc(100% - 40px);
+        top: 1.8rem;
     }
 
     .menu-icon {

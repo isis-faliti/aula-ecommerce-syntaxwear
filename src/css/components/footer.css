@@ -12,8 +12,8 @@
 .footer-content {
     display: flex;
     justify-content: space-between;
-    gap: 9.7rem;
-    padding: 2.5rem 5rem 2.62rem;
+    gap: clamp(1rem, 6.65vw, 9.7rem);
+    padding: 2.5rem clamp(1.5rem, 3.425vw, 5rem) 2.62rem;
     
 }
 
@@ -25,7 +25,8 @@
 }
 
 .footer-newsletter .newsletter form input {
-    width: 344px;
+    max-width: 344px;
+    min-width: 0;
     border-radius: 30px;
     color: #aaaaaa;
     border: 1px solid #dddddd;
@@ -108,4 +109,27 @@
 .footer-bottom p {
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+@media (max-width: 1070px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-nav {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-bottom p {
+        font-size: 1rem;
+    }
 }
